@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header h1 {
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+    .reference {
+      margin-bottom: 20px;
+    }
+    .info-section {
+      margin-bottom: 30px;
+    }
+    .info-section h2 {
+      color: #2563eb;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #e5e7eb;
+      text-align: left;
+    }
+    th {
+      background-color: #f8fafc;
+      width: 40%;
+    }
+    .terms {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 2px solid #e5e7eb;
+    }
+    .signatures {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .signature-block {
+      width: 45%;
+    }
+    .signature-line {
+      border-top: 1px solid #000;
+      margin-top: 40px;
+      padding-top: 8px;
+    }
+    @media print {
+      body { margin: 0; padding: 20px; }
+      .header h1 { color: #2563eb !important; }
+      .info-section h2 { color: #2563eb !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Mezzanine Floor Quotation</h1>
+    <div class="reference">
+      <p>Reference: {{referenceNumber}}</p>
+      <p>Date: {{date}}</p>
+      <p>Sales Consultant: {{consultantName}}</p>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <h2>Client Information</h2>
+    <table>
+      <tr>
+        <th>Customer Name:</th>
+        <td>{{customerName}}</td>
+      </tr>
+      <tr>
+        <th>Company:</th>
+        <td>{{companyName}}</td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td>{{email}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="info-section">
+    <h2>Project Specifications</h2>
+    <table>
+      <tr>
+        <th>Floor Size:</th>
+        <td>{{floorSize}} m²</td>
+      </tr>
+      <tr>
+        <th>Floor Finish Height:</th>
+        <td>{{floorFinishHeight}} mm</td>
+      </tr>
+      <tr>
+        <th>Floor Capacity:</th>
+        <td>{{floorCapacity}} KPA</td>
+      </tr>
+      <tr>
+        <th>Decking Type:</th>
+        <td>{{deckingType}}</td>
+      </tr>
+      <tr>
+        <th>Staircase:</th>
+        <td>{{staircase}}</td>
+      </tr>
+      {{#if handrail}}
+      <tr>
+        <th>Handrail Type:</th>
+        <td>{{handrailType}}</td>
+      </tr>
+      <tr>
+        <th>Handrail Length:</th>
+        <td>{{handrailLength}} m</td>
+      </tr>
+      {{/if}}
+      {{#if accessGate}}
+      <tr>
+        <th>Access Gate Type:</th>
+        <td>{{accessGateType}}</td>
+      </tr>
+      {{/if}}
+    </table>
+  </div>
+
+  <div class="info-section">
+    <h2>Pricing Details</h2>
+    <table>
+      <tr>
+        <th>Supply Type:</th>
+        <td>{{supplyType}}</td>
+      </tr>
+      <tr>
+        <th>Total Price:</th>
+        <td>{{totalPrice}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="terms">
+    <h2>Terms and Conditions</h2>
+    <p>1. This quotation is valid for 30 days from the date of issue.</p>
+    <p>2. All prices are in Australian Dollars (AUD) and exclude GST unless otherwise stated.</p>
+    <p>3. Payment terms: 50% deposit upon order confirmation, remaining 50% upon completion.</p>
+    <p>4. Delivery timeframe will be confirmed upon order placement.</p>
+    <p>5. Installation schedule to be coordinated with client's site requirements.</p>
+    <p>6. Any variations to the specified requirements may result in price adjustments.</p>
+  </div>
+
+  <div class="signatures">
+    <div class="signature-block">
+      <div class="signature-line">
+        <strong>Client Signature</strong><br>
+        Date: _________________
+      </div>
+    </div>
+    <div class="signature-block">
+      <div class="signature-line">
+        <strong>Company Representative</strong><br>
+        Date: _________________
+      </div>
+    </div>
+  </div>
+</body>
+</html>

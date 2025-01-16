@@ -1,0 +1,123 @@
+/* Update damage photo styles */
+    .damage-photo {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      max-height: 300px;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .damage-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* Print styles for photos */
+    @media print {
+      .damage-photo {
+        max-width: 400px;
+        max-height: 250px;
+        page-break-inside: avoid;
+      }
+      
+      .damage-photo img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .damage-photo {
+        max-width: 100%;
+        max-height: 250px;
+      }
+    }
+
+    /* Add styles for repair quote modal */
+    .repair-quote-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      overflow-y: auto;
+    }
+
+    .repair-quote-modal .modal-content {
+      background: white;
+      border-radius: 8px;
+      padding: 24px;
+      width: 90%;
+      max-width: 800px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .repair-quote-modal .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .repair-quote-modal .close-button {
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 4px 8px;
+      color: #666;
+    }
+
+    .repair-quote-modal .close-button:hover {
+      color: #000;
+    }
+
+    .repair-quote-modal .modal-body {
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .repair-quote-modal .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1rem;
+    }
+
+    .repair-quote-modal .print-btn {
+      padding: 0.75rem 1.5rem;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .repair-quote-modal .print-btn:hover {
+      background: var(--secondary-color);
+    }
+
+    .repair-quote-modal .no-preview {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+    }
+
+    .repair-quote-modal .price-input {
+      width: 80px;
+      padding: 4px;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      font-size: 0.875rem;
+    }

@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow read/write access to settings collection
+    match /settings/{document} {
+      allow read, write: if true; // For development - update with proper auth rules in production
+    }
+
+    // Existing rules for quotes collection
+    match /quotes/{document} {
+      allow read, write: if true;
+    }
+
+    // Existing rules for templates collection  
+    match /templates/{document} {
+      allow read, write: if true;
+    }
+  }
+}

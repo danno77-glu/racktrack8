@@ -1,0 +1,105 @@
+.audit-list {
+  padding: 2rem;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.new-audit-btn {
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.audit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.audit-card {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.audit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.audit-header h3 {
+  margin: 0;
+  color: var(--text-color);
+}
+
+.reference {
+  font-size: 0.875rem;
+  color: var(--primary-color);
+}
+
+.audit-details {
+  margin-bottom: 1rem;
+}
+
+.audit-details p {
+  margin: 0.5rem 0;
+  font-size: 0.875rem;
+}
+
+.risk-counts {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.risk {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.risk.red {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.risk.amber {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.risk.green {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.audit-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.audit-actions button {
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+}

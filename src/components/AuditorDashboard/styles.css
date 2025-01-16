@@ -1,0 +1,94 @@
+.auditor-dashboard {
+      padding: 2rem;
+    }
+
+    .scoreboard {
+      margin-bottom: 3rem;
+    }
+
+    .scoreboard h2 {
+      margin-bottom: 1rem;
+    }
+
+    .scoreboard table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .scoreboard th,
+    .scoreboard td {
+      padding: 0.75rem;
+      text-align: left;
+      border: 1px solid var(--border-color);
+    }
+
+    .scoreboard th {
+      background-color: #f8fafc;
+      font-weight: 600;
+    }
+
+    .loading,
+    .error {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .error {
+      color: #dc2626;
+    }
+
+    /* Styles for Next 7 Days Audits */
+    .next-7-days-audits {
+      margin-bottom: 3rem;
+    }
+
+    .next-7-days-audits h2 {
+      margin-bottom: 1rem;
+    }
+
+    .next-7-days-audits table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .next-7-days-audits th,
+    .next-7-days-audits td {
+      padding: 0.75rem;
+      text-align: left;
+      border: 1px solid var(--border-color);
+    }
+
+    .next-7-days-audits th {
+      background-color: #f8fafc;
+      font-weight: 600;
+    }
+
+    /* Styles for Past Booked Audits */
+    .past-booked-audits {
+      margin-bottom: 3rem;
+    }
+
+    .past-booked-audits h2 {
+      margin-bottom: 1rem;
+    }
+
+    .past-booked-audits table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .past-booked-audits th,
+    .past-booked-audits td {
+      padding: 0.75rem;
+      text-align: left;
+      border: 1px solid var(--border-color);
+    }
+
+    .past-booked-audits th {
+      background-color: #f8fafc;
+      font-weight: 600;
+    }
+
+    .past-audit-row {
+      background-color: #fee2e2;
+    }
